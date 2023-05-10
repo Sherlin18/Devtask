@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h6 {
+    margin: 10px 0;
+}
+h5, p{
+    margin: 0;
+}
+.container-1 ,.container-2 , .container-3{
+    display: none;
+}
+.container , .container-1 ,.container-2 , .container-3 {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid rgb(199, 198, 198);
+    background-color: #F7F8F9;
+    max-width: 375px;
+    min-height: 620px;
+}
+.welcome{
+    position: absolute;
+    bottom: 30px;
+    margin: 15px;
+}
+.login , .signup {
+    margin: 15px;
+}
+.profile{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pro-img{
+    position: relative;
+    left: -14px;
+}
+.cam-img{
+    position: absolute;
+    left: 50px;
+    bottom: 2px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 700;
+}
+.primary{
+    background-color: #6C25FF;
+    color: white;
+}
+.secondary{
+    background-color:  #6C25FF4B;
+}
+.signup form {
+    min-height: 80vh;
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+form p {
+    padding-bottom: 15px;
+}
+.radio {
+    flex-direction: row;
+    gap: 30px;
+}
+.radio-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span{
+    color: red;
+}
+.mb{
+    margin: 10px 0 20px 0;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600px;
+}
+.font , label{
+    font-size: 14px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: transparent;
+}
+input[type='radio'] {
+    accent-color: #6C25FF;
+    margin: 0;
+    height: 18px;
+    width: 18px;
+}
+div > label:not(:last-child) {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    color: rgb(124, 45, 214);
+    background-color: #F7F8F9;
+    padding: 0 5px;
+}
+.login-btn {
+   background-color: #CBCBCB;
+}
+.font{
+    margin-bottom: 15px;
+}
+.prof-pg {
+    border-bottom: 2px dashed #dedfe0;
+}
+.prof-pg h2 {
+    background-color: #fff;
+    margin: 0px;
+    padding: 20px 15px;
+}
+.prof-border{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    border-bottom: 2px dashed #dedfe0;
+}
+.profile-bg{
+    padding: 10px 20px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/sample.css">
+    <title>Dev Task</title>
+</head>
+<body>
+
+    <!-- /// Landing page /// -->
+    <div class="container">
+        <div class="welcome">
+            <h1>Welcome To PopX</h1>
+            <p class="mb">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="btn">
+                <button class="primary" id="create-btn">Create Account</button>
+                <button class="secondary" id="login-btn" >Already Registered? Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- //// Signup page //// -->
+    <div class="container-1">
+        <div class="signup">
+            <div>
+                <h1 class="mb">Create your PopX Account</h1>
+                <form>
+                    <div>
+                        <label for="firstname">First Name <span>*</span></label>
+                        <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name <span>*</span></label>
+                        <input type="text" class="form-control" id="lastname">
+                    </div>
+                    <div>
+                        <label for="email">Email Address <span>*</span></label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div>
+                        <label for="password">Password <span>*</span></label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div>
+                        <label for="company">Company Name <span>*</span></label>
+                        <input type="text" class="form-control" id="company">
+                    </div>
+                    <p> Are you a Agency?</p>
+                    <div class="radio">
+                        <div class="radio-btn">
+                            <input type="radio" name="form-control" value="Yes">
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="form-control" value="No">
+                            <label for="No">No</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button class="primary" id="create-button">Create Account</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /// Login page /// -->
+    <div class="container-2">
+        <div class="login">
+            <h1>Login to your PopX Account</h1>
+            <p class="mb">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <form>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter email address" id="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="password">
+                </div>
+            </form>
+            <button class="secondary login-btn" style="color: white;" id="login-button">Login</button>
+        </div>
+    </div>
+
+    <!-- /// Profile page /// -->
+    <div class="container-3">
+        <div class="prof-pg">
+            <h2>Account Settings</h2>
+            <div class="profile-bg">
+                <div class="profile">
+                    <div class="pro-img">
+                        <img src="assets/images/profile.png" width="70" height="70">
+                        <div class="cam-img">
+                            <img src="assets/images/camera.png" width="20" height="20">
+                            <!-- <i class="fa-solid fa-circle-camera"></i> -->
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Marry Roe</h5>
+                        <p>marry@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="font">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores sunt exercitationem nihil iusto optio dignissimos nisi molestias et illo omnis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="prof-border"></div>
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#create-btn").click(function(){
+                $(".container-1").show();
+                $(".container, .container-2, .container-3").hide();
+            });
+            
+            $("#login-btn").click(function(){
+                $(".container-2").show();
+                $(".container, container-1, .container-3").hide();
+            });
+
+            $("#create-button, #login-button").click(function(){
+                $(".container-3").show();
+                $(".container, .container-1, .container-2").hide();
+            });
+        });
+    </script>
+
+</body>
+</html>
